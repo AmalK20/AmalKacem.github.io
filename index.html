@@ -1,63 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Amal Kacem | Unity & VR/AR Developer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amal Kacem | Unity VR Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Amal Kacem</h1>
-    <p>Unity & VR/AR Game Developer</p>
-    <a href="#projects" class="btn">View Projects</a>
-</header>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a freshly graduated engineer specialized in virtual reality and game development.
-        I work mainly with Unity and C# to create immersive VR experiences and interactive games.
-        I am passionate about serious games, simulations, and performance optimization.
-    </p>
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>AMAL KACEM</h1>
+    <h2>Unity VR Developer</h2>
+    <p>Creating immersive experiences</p>
+    <div class="buttons">
+      <a href="#projects" class="btn neon">Explorer mes projets</a>
+      <a href="#" class="btn outline">Télécharger CV</a>
+    </div>
+  </div>
 </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Unity (C#)</li>
-        <li>VR Development (Meta Quest)</li>
-        <li>Unreal Engine (Basic)</li>
-        <li>Game UI / UX</li>
-        <li>Blender & 3D Integration</li>
-        <li>Git & Version Control</li>
-    </ul>
-</section>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 class="section-title">MES PROJETS</h2>
+  <div class="projects-grid">
 
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>VR Aerophobia Therapy Application</h3>
-        <p>
-            A virtual reality application designed to help people overcome fear of flying
-            through progressive exposure.
-        </p>
-        <p><strong>Tech:</strong> Unity, C#, Meta Quest</p>
+    <div class="project-card">
+      <img src="assets/images/project1.jpg">
+      <div class="project-info">
+        <h3>Simulation VR – Aérophobie</h3>
+        <span>Unity · VR · C#</span>
+      </div>
     </div>
 
+    <div class="project-card">
+      <img src="assets/images/project2.jpg">
+      <div class="project-info">
+        <h3>VR Medical Training</h3>
+        <span>Unity · VR · C#</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/images/project3.jpg">
+      <div class="project-info">
+        <h3>Virtual Escape Room</h3>
+        <span>Unity · VR</span>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: kacemamel8@gmail.com</p>
-    <p>GitHub: github.com/AmalK20</p>
-    <p>LinkedIn: linkedin.com/in/amal-kacem</p>
+<!-- VIDEOS -->
+<section class="section">
+  <h2 class="section-title">VIDÉOS</h2>
+  <div class="video-grid">
+    <div class="video-card">▶ Simulation VR</div>
+    <div class="video-card">▶ Menu VR</div>
+    <div class="video-card">▶ Optimisation VR</div>
+  </div>
 </section>
 
-<footer>
-    <p>© 2025 Amal Kacem</p>
+<!-- SKILLS -->
+<section class="section">
+  <h2 class="section-title">MES COMPÉTENCES</h2>
+  <div class="skills">
+    <span>Unity</span>
+    <span>C#</span>
+    <span>VR / XR</span>
+    <span>FMOD</span>
+    <span>Blender</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about">
+  <img src="assets/images/profile.jpg">
+  <div>
+    <h2>À PROPOS</h2>
+    <p>
+      Développeur VR spécialisé dans la création d’expériences immersives
+      thérapeutiques et interactives.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<footer class="contact">
+  <p>Disponible pour nouvelles opportunités</p>
+  <div class="icons">
+    <a href="#">✉️</a>
+    <a href="#">in</a>
+    <a href="#">Git</a>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
