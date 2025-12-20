@@ -74,33 +74,104 @@ body {
 
 /* PROJECTS */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; /* Space between cards */
 }
 
 .project-card {
-  position: relative;
+  background-color: #1e1e24; /* Dark background for the bottom half */
+  border-radius: 12px;
   overflow: hidden;
-  border-radius: 15px;
-  cursor: pointer;
+  width: 320px; /* Fixed width to match the card look */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
-.project-card img {
-  width: 100%;
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Top Section: Image on White Background */
+.card-image {
+  background-color: #ffffff;
+  height: 200px; /* Fixed height for consistency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures logos don't stretch */
   transition: transform 0.5s;
 }
 
-.project-card:hover img {
-  transform: scale(1.1);
+.project-card:hover .card-image img {
+  transform: scale(1.05);
 }
 
-.project-info {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 15px;
-  background: rgba(0,0,0,0.7);
+/* Bottom Section: Content */
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.project-desc {
+  font-size: 0.85rem;
+  color: #aaaaaa; /* Lighter grey text */
+  margin-bottom: 15px;
+}
+
+/* Tags Styling */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tags span {
+  font-size: 0.7rem;
+  padding: 4px 12px;
+  border-radius: 15px;
+  background: #2b2b30; /* Dark inner pill color */
+  border: 1px solid #444; /* Subtle border */
+  color: #ccc;
+}
+
+/* Button Styling */
+.project-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+  /* Gradient matching your reference image */
+  background: linear-gradient(90deg, #56CCF2 0%, #a18cd1 100%);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+  width: fit-content;
+  border: none;
+  margin-top: auto; /* Pushes button to bottom if content varies */
+}
+
+.project-btn:hover {
+  opacity: 0.9;
 }
 
 /* VIDEOS */
